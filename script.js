@@ -1,18 +1,13 @@
-// stringa che chieda all'utente quanti km vuole percorrere
-let number_km = prompt ('inserisci km da percorrere');
+/* // stringa che chieda all'utente quanti km vuole percorrere
+let number_km =  prompt('inserisci km da percorrere');
 console.log(number_km);
 //prezzo 
 let prezzo_base = 0.21 * Number(number_km);
-console.log(prezzo);
+console.log(prezzo_base);
 
 //stringa che chiede all'utente quanti anni ha
-let eta = Number(prompt ('inserisci la tua età'));
+let eta = prompt Number ('inserisci la tua età'));
 console.log(eta);
-
-//variabile che contiene prezzo finale
-let prezzo_finale= prezzo;
-
-
 
 //se user ha - di 18 anni
 if (eta<18) {
@@ -38,8 +33,19 @@ else  {
 }
 
 //prezzo arrotondato a 2 decimali
-let prezzo = prezzo_finale.toFixed(2);
+let prezzo = prezzo_base.toFixed(2);
 console.log(prezzo);
 
 //mostro il prezzo nella pagina
-document.getElementById('prezzo_finale').innerText = 'il prezzo finale è di: ${prezzo}€';
+document.getElementById('prezzo_finale').innerText= `il prezzo finale è di: ${prezzo}€`;
+
+ */
+let input_km= document.getElementById('km');
+console.log(input_km.value);
+let input_eta= document.getElementById('eta');
+console.log(input_eta.value);
+
+
+//tasto
+let button= document.getElementById('conferma');
+button.addEventListener('click'  );
