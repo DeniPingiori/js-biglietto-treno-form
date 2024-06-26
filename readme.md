@@ -13,3 +13,8 @@ MILESTONE 1: Iniziamo implementando il programma senza alcuna estetica: usando e
 MILESTONE 2: Solo una volta che il milestone 1 sarà completo e funzionante allora realizzeremo un form in pagina in cui l’utente potrà inserire i dati e visualizzare il calcolo finale con il prezzo. Il recap dei dati e l'output del prezzo finale, andranno quindi stampati in pagina (il prezzo dovrà essere formattato con massimo due decimali, per indicare i centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 Nota: Se non vi sentite particolarmente creativi, questa potrebbe essere un’implementazione da seguire per il secondo milestone. Potete scegliere di implementare una soluzione completamente diversa oppure simile, ma in ogni caso cercate di farla vostra.
 Link repo live coding: https://github.com/fabriziom90/js-html-css.git
+
+1. copia e incolla es di ieri
+2. in html (già collegato a js) faccio:
+    2.1 due input
+    2.2 1 bottone
