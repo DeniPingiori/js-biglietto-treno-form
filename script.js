@@ -54,30 +54,35 @@ button.addEventListener('click'  );
 // recupero pulsante dal dom
 const btn = document.getElementById('calculate');
 
+//quando il pulsante viene cliccato recupero i dati dei campi input, età e km 
 btn.addEventListener('click', function(){
-    const km = document.getElementById('km').value;
-    console.log(km);
-
-
+    
 //quando il pulsante viene cliccato recupero i dati dei campi input, età e km 
 const km = document.getElementById('km').value;
 const age = document.getElementById('age').value;
 
 //calcolo prezzo base
+
 let price = km * 0.21;
+let final_price
 
 //verifico età passeggero e a seconda del valore applico o meno sconto
 if(age == 0) { //maggiorenne
-
+    final_price = price;
 }
 else if(age == 1){ //minorenne
-
+    final_price = price * 0.8; //final_price = price-price 20/100
 }
 else if(age == 2){ //over 65
-
+    final_price = price * 0.6; //final_price = price-price 40/100
 }
 else{
     alert('Non hai selezionato l\'età. Verrà applicato il prezzo base');
 }
 
-}) 
+let message = `Il prezzo del tuo biglietto è pari a ${final_price.toFixed(2)}` ;
+document.getElementById('message').innerHTML = message;
+
+})
+
+
