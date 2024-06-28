@@ -63,24 +63,28 @@ const age = document.getElementById('age').value;
 
 //calcolo prezzo base
 
-let price = km * 0.21;
-let final_price
+let final_price = km * 0.21;
+let message = `<h2>Il prezzo del tuo biglietto è pari a ${final_price.toFixed(2)}</h2>` ;
 
 //verifico età passeggero e a seconda del valore applico o meno sconto
-if(age == 0) { //maggiorenne
-    final_price = price;
-}
-else if(age == 1){ //minorenne
+
+if(age == 1){ //minorenne
     final_price = price * 0.8; //final_price = price-price 20/100
+    message = `<h2>Il prezzo del tuo biglietto è pari a ${final_price.toFixed(2)}</h2>.
+    In quanto minorenne hai diritto a uno sconto del 20%` ;
+
 }
 else if(age == 2){ //over 65
     final_price = price * 0.6; //final_price = price-price 40/100
-}
-else{
-    alert('Non hai selezionato l\'età. Verrà applicato il prezzo base');
+    message = `<h2>Il prezzo del tuo biglietto è pari a ${final_price.toFixed(2)}</h2>.
+    In quanto over 65 hai diritto a uno sconto del $0%` ;
+
 }
 
-let message = `Il prezzo del tuo biglietto è pari a ${final_price.toFixed(2)}` ;
+
+//genero il messaggio
+console.log(document.getElementById('message').innerHTML);
+//inietto il messaggio nel dom
 document.getElementById('message').innerHTML = message;
 
 })
