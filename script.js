@@ -40,7 +40,7 @@ console.log(prezzo);
 document.getElementById('prezzo_finale').innerText= `il prezzo finale è di: ${prezzo}€`;
 
  */
-let input_km= document.getElementById('km');
+/*let input_km= document.getElementById('km');
 console.log(input_km.value);
 let input_eta= document.getElementById('eta');
 console.log(input_eta.value);
@@ -49,3 +49,12 @@ console.log(input_eta.value);
 //tasto
 let button= document.getElementById('conferma');
 button.addEventListener('click'  );
+*/
+
+// recupero pulsanti dal dom
+const btn = document.getElementById('calculate');
+
+btn.addEventListener('click', function(){
+    const km = document.getElementById('km').value;
+    console.log(km);
+})
